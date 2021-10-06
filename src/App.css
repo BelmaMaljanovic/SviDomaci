@@ -36,3 +36,124 @@
     transform: rotate(360deg);
   }
 }
+
+/* .App {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+} */
+/* .naslov1 {
+  padding: 100px;
+  color: rgb(15, 142, 165);
+}
+.btn {
+  border: none;
+  margin: 120px 50px 0 0;
+  width: 150px;
+  background-color: orangered;
+  height: 30px;
+}
+.kartice {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+}
+.Okvir {
+  background-color: rgba(24, 141, 122, 0.452);
+  width: 400px;
+  height: 500px;
+}
+.Okvir > img {
+  width: 400px;
+  height: 250px;
+}
+.tekst > h1 {
+  padding-left: 15px;
+  font-size: small;
+  color: #282c347a;
+}
+.tekst > h2 {
+  padding-left: 15px;
+  font-size: 15px;
+  color: rgb(20, 3, 3);
+}
+.tekst > p {
+  padding-left: 15px;
+} */
+
+.ikonica {
+  padding-top: 2px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(177, 177, 179, 0.404);
+  width: 25px;
+  height: 25px;
+}
+.okvir {
+  padding-top: 30px;
+  width: 100vw;
+  background-color: rgba(11, 10, 37, 0.945);
+  height: 100vh;
+}
+.okvir > .naslov {
+  padding-top: 30px;
+  text-align: center;
+}
+.okvir > .naslov > h1 {
+  font-size: 20px;
+  color: aliceblue;
+}
+.okvir > .naslov > p {
+  color: rgba(177, 177, 179, 0.719);
+  font-size: 12px;
+}
+
+.kartice {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.karticee {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.kartica2 {
+  padding: 20px;
+  width: 300px;
+  border: 1px solid rgb(91, 94, 97);
+  border-radius: 8px;
+
+  margin-bottom: 20px;
+}
+.kartica2 > h1 {
+  font-size: 14px;
+  color: aliceblue;
+}
+.kartica2 > p {
+  color: rgba(177, 177, 179, 0.719);
+  font-size: 13px;
+  font-weight: 100;
+}
+.button > button {
+  width: 100px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgba(177, 177, 179, 0.404);
+}
+.button > button:hover {
+  background-color: rgba(67, 67, 129, 0.404);
+}
+.okvir > .button {
+  text-align: center;
+  padding-top: 20px;
+}
