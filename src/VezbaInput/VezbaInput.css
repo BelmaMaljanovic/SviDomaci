@@ -1,0 +1,42 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+.okvir {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  background-color: rgba(78, 77, 75, 0.952);
+  align-items: center;
+  justify-content: space-around;
+}
+.input1 {
+  padding-top: 40px;
+  width: 350px;
+  height: 100px;
+}
+.input1 > form {
+  font-size: 25px;
+  color: rgb(44, 47, 48);
+}
+#name,
+#email {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: none;
+  background-color: rgba(58, 58, 58, 0.596);
+}
+
+#email:focus {
+  background-color: rgb(100, 95, 95);
+}
+.input2 {
+  width: 400px;
+  height: 200px;
+  background-color: blueviolet;
+}

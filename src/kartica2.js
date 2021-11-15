@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
 
 const Kartica2 = (props) => {
   const { ikonica, naslov } = props;
+
   return (
     <div className="kartica2">
       <div className="ikonica">

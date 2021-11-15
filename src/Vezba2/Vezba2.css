@@ -1,0 +1,27 @@
+.okvir {
+  background: rgb(25, 209, 148);
+  color: white;
+  display: flex;
+}
+.logo h1 {
+  padding: 25px 0px 25px 25px;
+}
+.logo,
+nav {
+  flex-grow: 1;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 25px;
+  cursor: pointer;
+}
+.buttn {
+  padding: 15px;
+  margin-left: 70px;
+}
+.darkBox {
+  background: rgb(30, 31, 31);
+  color: rgb(150, 143, 143);
+  display: flex;
+}

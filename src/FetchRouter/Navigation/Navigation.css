@@ -1,0 +1,24 @@
+.navigacija {
+  background-color: rgb(44, 61, 60);
+  width: 100vw;
+  padding: 15px;
+}
+nav {
+  margin: 0px auto;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+:link {
+  background-color: rgb(246, 250, 250);
+  border: 2px solid rgb(69, 133, 90);
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  width: 150px;
+}
+:link:hover {
+  border: white;
+  background-color: rgb(202, 209, 209);
+}

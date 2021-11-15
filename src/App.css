@@ -84,7 +84,7 @@
   padding-left: 15px;
 } */
 
-.ikonica {
+/* .ikonica {
   padding-top: 2px;
   text-align: center;
   border-radius: 50%;
@@ -156,4 +156,13 @@
 .okvir > .button {
   text-align: center;
   padding-top: 20px;
+} */
+
+.okvir {
+  background-color: rgb(30, 43, 100);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

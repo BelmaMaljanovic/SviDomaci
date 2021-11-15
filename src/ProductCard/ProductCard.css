@@ -1,0 +1,39 @@
+.product {
+  width: 720px;
+  height: 200px;
+  background-color: #e5e5e5;
+  display: flex;
+  border-radius: 30px;
+}
+.imageProduct {
+  background-image: url("product.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1.5;
+  border-radius: 30px;
+}
+.descriptionProduct {
+  padding: 30px 0px 20px 30px;
+  border-radius: 30px;
+  flex-grow: 0.5;
+}
+
+.shoppingCart {
+  flex-grow: 0.5;
+}
+
+.shoppingCart > p {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.buttnkorpa {
+  margin: 5px;
+  outline: none;
+  border: none;
+  background: #e5e5e5;
+}
+button {
+  font-size: 30px;
+  cursor: pointer;
+}
