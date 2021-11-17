@@ -85,7 +85,7 @@ import NavBar from "./ZoiVezbanje/NavBar";
 function App() {
   return (
     <div>
-      <Igrica />
+      <NavBar />
       {/* 
         <BrowserRouter>
           <Navigation />
