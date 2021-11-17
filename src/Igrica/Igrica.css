@@ -1,0 +1,15 @@
+.body {
+  padding-top: 30px;
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.newgame {
+  margin-left: 325px;
+  border: 2px solid wheat;
+  width: 100px;
+  height: 40px;
+  padding-top: 10px;
+  color: aliceblue;
+}

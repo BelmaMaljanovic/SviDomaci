@@ -9,6 +9,8 @@ import Navigation from "./FetchRouter/Navigation/Navigation";
 import Home from "./FetchRouter/Screen/Home";
 import Jezik from "./FetchRouter/Screen/Jezik";
 import Usluge from "./FetchRouter/Screen/Usluge";
+import { Igrica } from "./Igrica/Igrica";
+import NavBar from "./ZoiVezbanje/NavBar";
 
 // import { GlobalState } from "./ContextUseReducer/GlobalState/GlobalState";
 // import Komponenta from "./ContextUseReducer/Komponenta/Komponenta";
@@ -83,18 +85,21 @@ import Usluge from "./FetchRouter/Screen/Usluge";
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Navigation />
-        <GlobalState>
-          <GlobalInput>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/usluge" element={<Usluge />} />
-              <Route path="/jezik" element={<Jezik />} />
-            </Routes>
-          </GlobalInput>
-        </GlobalState>
-      </BrowserRouter>
+      <Igrica />
+      {/* 
+        <BrowserRouter>
+          <Navigation />
+          <GlobalState>
+            <GlobalInput>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/usluge" element={<Usluge />} />
+                <Route path="/jezik" element={<Jezik />} />
+              </Routes>
+            </GlobalInput>
+          </GlobalState>
+        </BrowserRouter>
+       */}
     </div>
   );
   // const podaci = [

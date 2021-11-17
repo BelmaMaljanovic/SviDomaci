@@ -51,6 +51,7 @@ const Home = () => {
           onChange={(e) => setInput2(e.target.value)}
         ></input>
       </form>
+      
     </>
   );
 };

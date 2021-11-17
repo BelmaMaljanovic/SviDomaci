@@ -2,6 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const initialState = { lista: [], prevedenaLista: [], loading: false };
+
 export const getPrevedeno = createAsyncThunk(
   "global/getPrevedeno",
   async ({ input, opcija, jezik }) => {
@@ -19,6 +20,18 @@ export const getPosts = createAsyncThunk(
   async (input, thunkAPI) => {
     let res;
     let url2 = `https://newsapi.org/v2/everything?q=${input}&sortBy=publishedAt&apiKey=42db0f4ba8144ae0b2e9af8b2c443c33`;
+    await axios.get(url2).then((data) => {
+      res = data.data.articles;
+    });
+    return res;
+  }
+);
+
+export const getStranice = createAsyncThunk(
+  "global/getStranice",
+  async ({ input, page }, thunkAPI) => {
+    let res;
+    let url2 = `https://newsapi.org/v2/everything?q=${input}&page=${page}&sortBy=publishedAt&apiKey=42db0f4ba8144ae0b2e9af8b2c443c33`;
     await axios.get(url2).then((data) => {
       res = data.data.articles;
     });
@@ -48,6 +61,16 @@ export const globalSlice = createSlice({
       state.prevedenaLista = payload;
     },
     [getPrevedeno.rejected]: (state) => {
+      state.loading = false;
+    },
+    [getStranice.pending]: (state) => {
+      state.loading = true;
+    },
+    [getStranice.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.lista = [...state.lista, ...payload];
+    },
+    [getStranice.rejected]: (state) => {
       state.loading = false;
     },
   },

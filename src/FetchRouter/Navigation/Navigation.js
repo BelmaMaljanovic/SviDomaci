@@ -8,7 +8,7 @@ const Navigation = () => {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/usluge">Opsirnije</Link>
-        <Link to="/jezik">Prevedi</Link>
+        <Link to="/jezik"> Prevedi</Link>
       </nav>
     </div>
   );
